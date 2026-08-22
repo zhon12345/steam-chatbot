@@ -1,0 +1,227 @@
+{
+   "intents": [
+      {
+         "tag": "greeting",
+         "patterns": [
+            "Hi",
+            "How are you?",
+            "Is anyone there?",
+            "Hello",
+            "Good day",
+            "What's up",
+            "how are ya",
+            "heyy",
+            "whatsup",
+            "??? ??? ??",
+            "Yo",
+            "Hey"
+         ],
+         "responses": [
+            "Hello! Welcome to the Steam Game Assistant. What kind of games are you looking for today?",
+            "Hey there! Ready to discover your next favorite game? Ask me about genres, prices, or recommendations!"
+         ]
+      },
+      {
+         "tag": "goodbye",
+         "patterns": [
+            "cya",
+            "see you",
+            "bye bye",
+            "See you later",
+            "Goodbye",
+            "I am Leaving",
+            "Bye",
+            "Have a Good day",
+            "talk to you later",
+            "ttyl",
+            "i got to go",
+            "gtg"
+         ],
+         "responses": [
+            "Goodbye! Happy gaming!",
+            "Catch you later! Feel free to come back whenever you need game recommendations.",
+            "Bye! Hope you found something great to play!"
+         ]
+      },
+      {
+         "tag": "creator",
+         "patterns": [
+            "what is the name of your developers",
+            "what is the name of your creators",
+            "what is the name of the developers",
+            "what is the name of the creators",
+            "who created you",
+            "your developers",
+            "your creators",
+            "who are your developers",
+            "developers",
+            "you are made by",
+            "you are made by whom",
+            "who created you",
+            "who create you",
+            "creators",
+            "who made you",
+            "who designed you"
+         ],
+         "responses": [
+            "College students"
+         ]
+      },
+      {
+         "tag": "swear",
+         "patterns": [
+            "fuck",
+            "bitch",
+            "shut up",
+            "hell",
+            "stupid",
+            "idiot",
+            "dumb ass",
+            "asshole",
+            "fucker"
+         ],
+         "responses": [
+            "please use appropriate language",
+            "Maintaining decency would be appreciated"
+         ]
+      },
+      {
+         "tag": "gratitude",
+         "patterns": [
+            "okk",
+            "okie",
+            "nice work",
+            "well done",
+            "good job",
+            "thanks for the help",
+            "Thank You",
+            "Thanks",
+            "Good work",
+            "k",
+            "ok",
+            "okay"
+         ],
+         "responses": [
+            "You're welcome! Let me know if you need anything else.",
+            "Glad I could help! Happy gaming!",
+            "Anytime! Need help finding another game?"
+         ]
+      },
+      {
+         "tag": "task",
+         "patterns": [
+            "what can you do",
+            "what are the thing you can do",
+            "things you can do",
+            "what can u do for me",
+            "how u can help me",
+            "why i should use you"
+         ],
+         "responses": [
+            "I can recommend Steam games based on your favorite titles, genres, budget, or OS (Windows, Mac, Linux). I can also check game prices and discounts",
+            "I'm your Steam discovery assistant! Ask me to find games similar to your favorites or filter titles under a target price.",
+            "I use content-based machine learning to suggest games tailored to your tastes, filter by budget or platform, and assist with Steam store and refund FAQs."
+         ]
+      },
+      {
+         "tag": "help",
+         "patterns": [
+            "help",
+            "help me",
+            "i need help",
+            "can you help me",
+            "how to use this chatbot",
+            "guide me",
+            "what should I type"
+         ],
+         "responses": [
+            "Try asking me things like: 'Recommend games like Witcher 3', 'Show me Mac strategy games under $15', or 'How do Steam refunds work?'",
+            "Need inspiration? Try asking: 'Find games similar to Portal 2' or 'Are there cheap RPGs for Linux?'"
+         ]
+      },
+      {
+         "tag": "refund",
+         "patterns": [
+            "How do Steam refunds work?",
+            "Can I refund a game?",
+            "My game won't launch",
+            "How to request a refund on Steam",
+            "What is the refund policy?",
+            "Can I get my money back?",
+            "How many hours can I play and still get a refund?"
+         ],
+         "responses": [
+            "Steam offers refunds within 14 days of purchase if the game has been played for less than 2 hours.",
+            "You can request a refund at help.steampowered.com as long as you've played under 2 hours and bought it within 14 days."
+         ]
+      },
+      {
+         "tag": "search_by_genre",
+         "patterns": [
+            "Find me an RPG game",
+            "Show me strategy games",
+            "Recommend an action title",
+            "What are some good horror games?",
+            "I want to play an indie game",
+            "List popular sports games",
+            "Can you recommend a simulation game?"
+         ],
+         "responses": [
+            "SEARCH_GENRE_TRIGGER"
+         ]
+      },
+      {
+         "tag": "search_by_title",
+         "patterns": [
+            "Tell me about Elden Ring",
+            "Do you have Cyberpunk 2077?",
+            "Information on Portal 2",
+            "Look up Witcher 3",
+            "What is Stardew Valley about?"
+         ],
+         "responses": [
+            "SEARCH_TITLE_TRIGGER"
+         ]
+      },
+      {
+         "tag": "price_inquiry",
+         "patterns": [
+            "How much is this game?",
+            "Show me games under $10",
+            "Are there any free games?",
+            "List games under $20",
+            "What is the cheapest game here?",
+            "What games are cheap?"
+         ],
+         "responses": [
+            "SEARCH_PRICE_TRIGGER"
+         ]
+      },
+      {
+         "tag": "top_rated",
+         "patterns": [
+            "What are the highest rated games?",
+            "Show me top game recommendations",
+            "Best games available",
+            "What's popular right now?",
+            "Show me highly reviewed games"
+         ],
+         "responses": [
+            "SEARCH_TOP_RATED_TRIGGER"
+         ]
+      },
+      {
+         "tag": "platform_support",
+         "patterns": [
+            "Is this game on Mac?",
+            "Can I play this on Linux?",
+            "Does it work on Steam Deck?",
+            "Is Windows required?",
+            "What operating systems are supported?"
+         ],
+         "responses": [
+            "CHECK_PLATFORM_TRIGGER"
+         ]
+      }
+   ]
+}
