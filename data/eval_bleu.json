@@ -1,0 +1,41 @@
+[
+  {
+    "input": "hi",
+    "references": [
+      "Hello! Welcome to the Steam Game Assistant.",
+      "Hey there! Ready to discover some games?"
+    ]
+  },
+  {
+    "input": "hello",
+    "references": [
+      "Hi! I can help you find Steam games.",
+      "Hello! What games are you looking for today?"
+    ]
+  },
+  {
+    "input": "who developed you",
+    "references": [
+      "I was developed by university students."
+    ]
+  },
+  {
+    "input": "thank you for helping",
+    "references": [
+      "You're welcome! Let me know if you need anything else.",
+      "Glad I could help!"
+    ]
+  },
+  {
+    "input": "close",
+    "references": [
+      "Goodbye! Happy gaming!"
+    ]
+  },
+  {
+    "input": "exit",
+    "references": [
+      "Bye! Hope you found something great to play!"
+    ]
+  }
+]

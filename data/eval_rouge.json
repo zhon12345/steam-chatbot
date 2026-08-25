@@ -1,0 +1,193 @@
+[
+  {
+    "input": "give me information on baldurs gate 3",
+    "expected_intent": "game_info",
+    "references": [
+      "Baldur's Gate 3 is a story-rich RPG developed by Larian Studios with a 96.8% positive rating. It costs $44.99 with a 25% discount.",
+      "Baldur's Gate 3 is an Adventure, RPG, and Strategy game made by Larian Studios priced at $44.99."
+    ]
+  },
+  {
+    "input": "info on baldurs gate 3",
+    "expected_intent": "game_info",
+    "references": [
+      "Baldur's Gate 3 is a party-based RPG set in the Dungeons & Dragons universe by Larian Studios. It is currently on sale for $44.99."
+    ]
+  },
+  {
+    "input": "look up terraria",
+    "expected_intent": "game_info",
+    "references": [
+      "Terraria is an action-adventure sandbox game by Re-Logic with a 97.5% positive rating. It is currently $4.99 at 50% off.",
+      "Terraria is an Action and Adventure indie RPG priced at $4.99."
+    ]
+  },
+  {
+    "input": "is terraria free",
+    "expected_intent": "price_inquiry",
+    "references": [
+      "No, Terraria is not free. It is currently priced at $4.99 with a 50% discount.",
+      "Terraria costs $4.99."
+    ]
+  },
+  {
+    "input": "is Team Fortress 2 free to play?",
+    "expected_intent": "price_inquiry",
+    "references": [
+      "Yes, Team Fortress 2 is free to play.",
+      "Team Fortress 2 is completely free to play on Steam."
+    ]
+  },
+  {
+    "input": "is Manor Lords on sale?",
+    "expected_intent": "price_inquiry",
+    "references": [
+      "Yes, Manor Lords is currently on sale for $25.99, which is 35% off.",
+      "Manor Lords is on sale for $25.99."
+    ]
+  },
+  {
+    "input": "does terraria support linux",
+    "expected_intent": "platform_support",
+    "references": [
+      "Yes, Terraria is available on Linux, Windows, and macOS.",
+      "Terraria supports Linux along with PC and Mac."
+    ]
+  },
+  {
+    "input": "can balatro run on windows",
+    "expected_intent": "platform_support",
+    "references": [
+      "Yes, Balatro runs on Windows and macOS.",
+      "Balatro supports Windows PCs."
+    ]
+  },
+  {
+    "input": "is moonlighter supported on mac",
+    "expected_intent": "platform_support",
+    "references": [
+      "Yes, Moonlighter is supported on Mac, Windows, and Linux.",
+      "Moonlighter is playable on macOS."
+    ]
+  },
+  {
+    "input": "is Stardew Valley PC compatible?",
+    "expected_intent": "platform_support",
+    "references": [
+      "Yes, Stardew Valley is PC compatible and supports Windows, macOS, and Linux.",
+      "Stardew Valley runs on Windows PCs."
+    ]
+  },
+  {
+    "input": "does brotato run on windows",
+    "expected_intent": "platform_support",
+    "references": [
+      "Yes, Brotato supports Windows, macOS, and Linux.",
+      "Brotato is playable on Windows."
+    ]
+  },
+  {
+    "input": "lookup brotato",
+    "expected_intent": "game_info",
+    "references": [
+      "Brotato is a top-down arena shooter roguelite developed by Blobfish. It has a 96.7% positive rating and costs $2.99.",
+      "Brotato is an Action Casual Roguelite game priced at $2.99."
+    ]
+  },
+  {
+    "input": "meccha chameleon",
+    "expected_intent": "game_info",
+    "references": [
+      "MECCHA CHAMELEON is a casual hide-and-seek game developed by lemorion_1224. It is priced at $4.79 with a 20% discount.",
+      "MECCHA CHAMELEON costs $4.79."
+    ]
+  },
+  {
+    "input": "recommed me good games",
+    "expected_intent": "recommendation",
+    "references": [
+      "Some highly rated games include Kabuto Park ($3.99), The WereCleaner (Free), Aokana ($17.49), A Castle Full of Cats ($2.39), and Papa's Freezeria Deluxe ($4.79).",
+      "Top recommended games are Kabuto Park, The WereCleaner, Aokana, A Castle Full of Cats, and Papa's Freezeria Deluxe."
+    ]
+  },
+  {
+    "input": "what are the highest-rated games on Steam right now?",
+    "expected_intent": "recommendation",
+    "references": [
+      "The highest-rated games right now are Kabuto Park, The WereCleaner, Aokana - Extra2, A Castle Full of Cats, and Papa's Freezeria Deluxe.",
+      "Top rated Steam games include Kabuto Park ($3.99) and The WereCleaner (Free)."
+    ]
+  },
+  {
+    "input": "recommend games like Portal 2",
+    "expected_intent": "recommendation",
+    "references": [
+      "If you like Portal 2, try BattleBlock Theater, A Hat in Time, Trine, Crypt of the NecroDancer, and Trine 2.",
+      "Games similar to Portal 2 include BattleBlock Theater ($4.49) and A Hat in Time ($14.99)."
+    ]
+  },
+  {
+    "input": "games playable on linux",
+    "expected_intent": "recommendation",
+    "references": [
+      "Recommended Linux games include Kabuto Park, A Castle Full of Cats, A Tower Full of Cats, A Short Hike, and TOEM.",
+      "Top games available on Linux are Kabuto Park ($3.99) and A Short Hike ($4.39)."
+    ]
+  },
+  {
+    "input": "recommend some action games",
+    "expected_intent": "recommendation",
+    "references": [
+      "Popular action games include The WereCleaner, Papa's Freezeria Deluxe, HoloCure - Save the Fans!, The Upturned, and Senren Banka.",
+      "Top action recommendations are The WereCleaner (Free) and Papa's Freezeria Deluxe ($4.79)."
+    ]
+  },
+  {
+    "input": "games for mac?",
+    "expected_intent": "recommendation",
+    "references": [
+      "Recommended Mac games include Kabuto Park, A Short Hike, Beastieball, TOEM, and Aseprite.",
+      "Top choices for macOS are Kabuto Park ($3.99) and A Short Hike ($4.39)."
+    ]
+  },
+  {
+    "input": "free games",
+    "expected_intent": "recommendation",
+    "references": [
+      "Great free games on Steam include The WereCleaner, HoloCure - Save the Fans!, Buy a Croquette!, Our Life: Beginnings & Always, and Word Game: Episode 0.",
+      "Top free games are The WereCleaner and HoloCure - Save the Fans!."
+    ]
+  },
+  {
+    "input": "top free games on linux",
+    "expected_intent": "recommendation",
+    "references": [
+      "Top free games available on Linux are Our Life: Beginnings & Always, A Date with Death, Katawa Shoujo, Helltaker, and Iron Snout.",
+      "Recommended free Linux titles include Helltaker and Our Life: Beginnings & Always."
+    ]
+  },
+  {
+    "input": "co op games for under $20",
+    "expected_intent": "recommendation",
+    "references": [
+      "Great co-op games under $20 include Monster Prom 4 ($11.99), Portal 2 ($1.99), Stardew Valley ($8.99), Vampire Survivors ($3.74), and Schedule I ($13.99).",
+      "Top co-op recommendations under $20 are Portal 2 and Stardew Valley."
+    ]
+  },
+  {
+    "input": "games like terraria",
+    "expected_intent": "recommendation",
+    "references": [
+      "Games similar to Terraria include Tinkerlands, Niffelheim, Forager, Conan Exiles, and Tinkertown.",
+      "If you enjoy Terraria, check out Forager ($6.99) and Tinkerlands ($9.74)."
+    ]
+  },
+  {
+    "input": "free games like holocure save the fans",
+    "expected_intent": "recommendation",
+    "references": [
+      "Free games similar to HoloCure include Touhou Fantasia, Jigoku Kisetsukan, Kagura Survivors, Himno, and Shotgun Witch.",
+      "If you like HoloCure, try free titles like Touhou Fantasia and Himno."
+    ]
+  }
+]
