@@ -4,3 +4,5 @@ matplotlib
 nltk
 scikit-learn
 rouge-score
+joblib
+streamlit
