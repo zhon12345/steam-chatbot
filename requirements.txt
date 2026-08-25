@@ -6,3 +6,4 @@ scikit-learn
 rouge-score
 joblib
 streamlit
+flashtext
