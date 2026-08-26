@@ -10,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 def load_artifacts():
-    model = joblib.load("models/intent_classifier.joblib")
+    model = joblib.load("models/linear_svc.joblib")
     title_vectorizer = joblib.load("models/title_vectorizer.joblib")
     metadata_vectorizer = joblib.load("models/metadata_vectorizer.joblib")
     df = joblib.load("models/games_data.joblib")
@@ -91,7 +91,7 @@ def get_intent(
         )
         print("-----------------------------\n")
 
-    if confidence < confidence_threshold and margin < margin_threshold:
+    if confidence < confidence_threshold or margin < margin_threshold:
         return None
 
     return artifacts["model"].classes_[best_idx]

@@ -15,23 +15,24 @@ An intent-based conversational chatbot and recommendation engine designed to hel
 steam-chatbot/
 │
 ├── data/
-│   ├── games.json                 # Raw Steam games dataset
-│   ├── intents.json               # Intent tags, patterns, and static responses
-│   ├── eval_bleu.json             # Conversational evaluation benchmark
-│   └── eval_rouge.json            # Retrieval evaluation benchmark
+│   ├── games.json                            # Raw Steam games dataset
+│   ├── intents.json                          # Intent tags, patterns, and static responses
+│   ├── eval_bleu.json                        # Conversational evaluation benchmark
+│   └── eval_rouge.json                       # Retrieval evaluation benchmark
 │
 ├── models/
-│   ├── auxiliary_data.joblib      # Intent lookups & metadata term dictionaries
-│   ├── games_data.joblib          # Cleaned pandas DataFrame
-│   ├── intent_classifier.joblib   # Fitted Logistic Regression pipeline
-│   ├── metadata_vectorizer.joblib # TF-IDF vectorizer for categories, genres & tags
-│   ├── metadata_matrix.npz        # Pre-computed metadata TF-IDF sparse matrix
-│   ├──title_vectorizer.joblib     # TF-IDF title vectorizer
-│   └──  title_matrix.npz          # Pre-computed title similarity matrix
+│   ├── auxiliary_data.joblib                 # Intent lookups & metadata term dictionaries
+│   ├── games_data.joblib                     # Cleaned pandas DataFrame
+│   ├── logistic_regression_classifier.joblib # Fitted Logistic Regression pipeline
+│   ├── linear_svc_classifier.joblib          # Fitted Linear SVC pipeline
+│   ├── metadata_vectorizer.joblib            # TF-IDF vectorizer for categories, genres & tags
+│   ├── metadata_matrix.npz                   # Pre-computed metadata TF-IDF sparse matrix
+│   ├──title_vectorizer.joblib                # TF-IDF title vectorizer
+│   └──  title_matrix.npz                     # Pre-computed title similarity matrix
 │
-├── app.py                         # Streamlit web application interface
-├── engine.py                      # Core execution pipeline & parsing logic
-├── requirements.txt               # Application dependencies
+├── app.py                                    # Streamlit web application interface
+├── engine.py                                 # Core execution pipeline & parsing logic
+├── requirements.txt                          # Application dependencies
 └── README.md
 ```
 
