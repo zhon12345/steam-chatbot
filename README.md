@@ -7,7 +7,7 @@ An intent-based conversational chatbot and recommendation engine designed to hel
 - **Frontend:** `streamlit`
 - **Data Processing:** `pandas`, `numpy`
 - **ML & NLP:** `scikit-learn`, `flashtext`, `nltk`, `rouge-score`
-- **Model Serialization:** `joblib`
+- **Artifact Serialization:** `joblib`, `scipy`
 
 ## 📂 Project Structure
 
