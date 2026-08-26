@@ -65,7 +65,11 @@ def mask_entities(clean_input, artifacts):
 
 
 def get_intent(
-    clean_input, artifacts, confidence_threshold=0.40, margin_threshold=0.10
+    clean_input,
+    artifacts,
+    confidence_threshold=0.40,
+    margin_threshold=0.10,
+    verbose=False,
 ):
     probabilities = artifacts["model"].predict_proba([clean_input])[0]
     sorted_idx = np.argsort(probabilities)[::-1]
@@ -75,6 +79,17 @@ def get_intent(
 
     confidence = probabilities[best_idx]
     margin = probabilities[best_idx] - probabilities[second_idx]
+
+    if verbose:
+        print("\n--- Intent Probabilities ---")
+        for idx in sorted_idx:
+            intent_name = artifacts["model"].classes_[idx]
+            prob = probabilities[idx]
+            print(f"  {intent_name:<20}: {prob * 100:6.2f}%")
+        print(
+            f"  Top Confidence: {confidence * 100:.2f}% | Margin: {margin * 100:.2f}%"
+        )
+        print("-----------------------------\n")
 
     if confidence < confidence_threshold and margin < margin_threshold:
         return None
