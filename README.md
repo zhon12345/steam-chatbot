@@ -9,7 +9,7 @@ An intent-based conversational chatbot and recommendation engine designed to hel
 - **ML & NLP:** `scikit-learn`, `flashtext`, `nltk`, `rouge-score`
 - **Artifact Serialization:** `joblib`, `scipy`
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 steam-chatbot/
@@ -17,20 +17,20 @@ steam-chatbot/
 ├── data/
 │   ├── games.json                 # Raw Steam games dataset
 │   ├── intents.json               # Intent tags, patterns, and static responses
-│   ├── eval_conversation.json     # Conversational evaluation benchmark
-│   └── eval_data.json             # Retrieval evaluation benchmark
+│   ├── eval_bleu.json             # Conversational evaluation benchmark
+│   └── eval_rouge.json            # Retrieval evaluation benchmark
 │
 ├── models/
 │   ├── auxiliary_data.joblib      # Intent lookups & metadata term dictionaries
 │   ├── games_data.joblib          # Cleaned pandas DataFrame
-│   ├── intent_model.joblib        # Fitted Logistic Regression pipeline
-│   ├── metadata_matrix.joblib     # Pre-computed metadata TF-IDF sparse matrix
-│   ├── metadata_vectorizer.joblib # TF-IDF vectorizer for categories/genres/tags
-│   ├── title_matrix.joblib        # Pre-computed title similarity matrix
-│   └── title_vectorizer.joblib    # TF-IDF title vectorizer
+│   ├── intent_classifier.joblib   # Fitted Logistic Regression pipeline
+│   ├── metadata_vectorizer.joblib # TF-IDF vectorizer for categories, genres & tags
+│   ├── metadata_matrix.npz        # Pre-computed metadata TF-IDF sparse matrix
+│   ├──title_vectorizer.joblib     # TF-IDF title vectorizer
+│   └──  title_matrix.npz          # Pre-computed title similarity matrix
 │
 ├── app.py                         # Streamlit web application interface
-├── chatbot_engine.py              # Core execution pipeline & parsing logic
+├── engine.py                      # Core execution pipeline & parsing logic
 ├── requirements.txt               # Application dependencies
 └── README.md
 ```
