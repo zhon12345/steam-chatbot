@@ -258,11 +258,7 @@ def handle_price_inquiry(parsed_query, artifacts):
 
 def handle_platform_support(parsed_query, artifacts):
     if not parsed_query.get("title") and parsed_query.get("platform"):
-        return handle_recommendation(
-            parsed_query,
-            artifacts,
-            header=f"Top rated games on {parsed_query['platform'].capitalize()}:",
-        )
+        return handle_recommendation(parsed_query, artifacts)
 
     game = find_by_title(parsed_query, artifacts)
     if game is None:
