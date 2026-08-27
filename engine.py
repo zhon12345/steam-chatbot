@@ -10,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 def load_artifacts():
-    model = joblib.load("models/linear_svc.joblib")
+    model = joblib.load("models/linear_svc_classifier.joblib")
     title_vectorizer = joblib.load("models/title_vectorizer.joblib")
     metadata_vectorizer = joblib.load("models/metadata_vectorizer.joblib")
     df = joblib.load("models/games_data.joblib")
