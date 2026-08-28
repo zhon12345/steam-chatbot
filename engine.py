@@ -80,6 +80,8 @@ def get_intent(
     confidence = probabilities[best_idx]
     margin = probabilities[best_idx] - probabilities[second_idx]
 
+    intent = artifacts["model"].classes_[best_idx]
+
     if verbose:
         print("\n--- Intent Probabilities ---")
         for idx in sorted_idx:
@@ -91,10 +93,12 @@ def get_intent(
         )
         print("-----------------------------\n")
 
-    if confidence < confidence_threshold or margin < margin_threshold:
-        return None
+    accepted = confidence >= confidence_threshold and margin >= margin_threshold
 
-    return artifacts["model"].classes_[best_idx]
+    if verbose:
+        return intent if accepted else None, confidence, margin
+
+    return intent if accepted else None
 
 
 def extract_metadata(clean_input, artifacts):
