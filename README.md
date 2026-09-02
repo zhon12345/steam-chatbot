@@ -27,9 +27,10 @@ steam-chatbot/
 │   ├── linear_svc_classifier.joblib          # Fitted Linear SVC pipeline
 │   ├── metadata_vectorizer.joblib            # TF-IDF vectorizer for categories, genres & tags
 │   ├── metadata_matrix.npz                   # Pre-computed metadata TF-IDF sparse matrix
-│   ├──title_vectorizer.joblib                # TF-IDF title vectorizer
+│   ├── title_vectorizer.joblib               # TF-IDF title vectorizer
 │   └──  title_matrix.npz                     # Pre-computed title similarity matrix
 │
+├── Steam AI Chatbot.ipynb                    # Jupyter notebook for development & evaluation
 ├── app.py                                    # Streamlit web application interface
 ├── engine.py                                 # Core execution pipeline & parsing logic
 ├── requirements.txt                          # Application dependencies
