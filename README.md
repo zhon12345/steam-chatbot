@@ -30,7 +30,7 @@ steam-chatbot/
 │   ├── title_vectorizer.joblib               # TF-IDF title vectorizer
 │   └──  title_matrix.npz                     # Pre-computed title similarity matrix
 │
-├── Steam AI Chatbot.ipynb                    # Jupyter notebook for development & evaluation
+├── chatbot.ipynb                             # Jupyter notebook for development & evaluation
 ├── app.py                                    # Streamlit web application interface
 ├── engine.py                                 # Core execution pipeline & parsing logic
 ├── requirements.txt                          # Application dependencies
