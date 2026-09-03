@@ -53,31 +53,36 @@ To run the project locally, follow these steps:
 1. Clone the repository
 
 ```bash
-  git clone https://github.com/zhon12345/steam-chatbot.git
+git clone https://github.com/zhon12345/steam-chatbot.git
 ```
 
 2. Navigate to the project directory
 
 ```bash
-  cd steam-chatbot
+cd steam-chatbot
 ```
 
-3. Setup a virtual environment
+3. Create environment and install dependencies
+
+#### Option A: Using `uv` (Recommended)
 
 ```bash
-python -m venv .venv
-
+uv sync
 .venv\Scripts\activate
 ```
 
-4. Install dependencies:
+#### Option B: Using `pip` and requirements.txt
+
 
 ```bash
-  pip install -r requirements.txt
+python -m venv .venv
+.venv\Scripts\activate
+
+pip install -r requirements.txt
 ```
 
-5. Start the application:
+4. Start the application:
 
 ```bash
-  streamlit run app.py
+streamlit run app.py
 ```
