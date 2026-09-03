@@ -5,13 +5,13 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "dotenv>=0.9.9",
     "flashtext>=2.7",
     "joblib>=1.6.0",
     "matplotlib>=3.11.1",
     "nltk>=3.10.3",
     "numpy>=2.5.2",
     "pandas>=3.0.5",
+    "python-dotenv>=1.2.3",
     "rouge-score>=0.1.2",
     "scikit-learn>=1.9.0",
     "streamlit>=1.63.0",

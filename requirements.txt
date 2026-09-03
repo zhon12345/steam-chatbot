@@ -7,4 +7,4 @@ rouge-score
 joblib
 streamlit
 flashtext
-dotenv
+python-dotenv
